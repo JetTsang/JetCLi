@@ -1,11 +1,12 @@
 {
-  "name": "jetcli",
+  "name": "@jettsang8086/jetcli",
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "release": "node ./scripts/Release.js release"
+    "release": "node ./scripts/Release.js release",
+    "publish2Npm": "zsh ./scripts/publish.sh"
   },
   "keywords": [],
   "author": "",
@@ -26,5 +27,8 @@
   },
   "devDependencies": {
     "semver": "^7.5.1"
-  }
+  },
+  "publishConfig": {
+    "access": "public"
+  } 
 }
